@@ -1,0 +1,24 @@
+package br.com.senai.backend.sistema_mercado.services;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import br.com.senai.backend.sistema_mercado.models.Funcionario;
+import br.com.senai.backend.sistema_mercado.repositories.FuncionariosRepository;
+
+@Service
+public class FuncionarioService {
+    
+
+@Autowired    
+private FuncionariosRepository funcionarioRepository;
+
+public Funcionario funcionarioRepository (Funcionario funcionario){
+return  funcionarioRepository.save (funcionario);
+}
+
+public Funcionario recuperarPorId(Integer id){
+ return funcionarioRepository.findById(id).get();
+}
+
+}
