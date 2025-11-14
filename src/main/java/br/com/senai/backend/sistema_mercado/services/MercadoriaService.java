@@ -12,7 +12,7 @@ public class MercadoriaService {
 @Autowired    
 private MercadoriaRepository mercadoriaRepository;
 
-public Mercadoria mercadoriaRepository (Mercadoria mercadoria){
+public Mercadoria cadastrar (Mercadoria mercadoria){
 return  mercadoriaRepository.save(mercadoria);
 }
 public Mercadoria recuperarPorId(Integer id){

@@ -13,7 +13,7 @@ public class FuncionarioService {
 @Autowired    
 private FuncionariosRepository funcionarioRepository;
 
-public Funcionario funcionarioRepository (Funcionario funcionario){
+public Funcionario cadastrar  (Funcionario funcionario){
 return  funcionarioRepository.save (funcionario);
 }
 
