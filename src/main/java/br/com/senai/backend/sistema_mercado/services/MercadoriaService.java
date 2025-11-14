@@ -21,28 +21,3 @@ public Mercadoria recuperarPorId(Integer id){
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}

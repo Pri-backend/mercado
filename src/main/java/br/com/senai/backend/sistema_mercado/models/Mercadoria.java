@@ -16,27 +16,27 @@ public class Mercadoria {
 @Column(name="id")
 private Integer id;
 
-@Column(name="preço")
-private double preço;
+@Column(name="preco")
+private double preco;
 
 @Column(name="quantidade")
-private  int  quantidade;
+private  String  quantidade;
 
 @Column(name="nome")
-private  int  nome;
+private  String  nome;
 
 @Column(name="categoria")
-private  int  caegoria;
+private  String  categoria;
 
     public Mercadoria() {
     }
 
-    public Mercadoria(int caegoria, Integer id, int nome, double preço, int quantidade) {
-        this.caegoria = caegoria;
+    public Mercadoria(Integer id, double preco, String quantidade, String nome, String categoria) {
         this.id = id;
-        this.nome = nome;
-        this.preço = preço;
+        this.preco = preco;
         this.quantidade = quantidade;
+        this.nome = nome;
+        this.categoria = categoria;
     }
 
     public Integer getId() {
@@ -47,44 +47,38 @@ private  int  caegoria;
         this.id = id;
     }
 
-    public double getPreço() {
-        return preço;
+    public double getPreco() {
+        return preco;
     }
 
-    public void setPreço(double preço) {
-        this.preço = preço;
+    public void setPreco(double preco) {
+        this.preco = preco;
     }
 
-    public int getQuantidade() {
+    public String getQuantidade() {
         return quantidade;
     }
 
-    public void setQuantidade(int quantidade) {
+    public void setQuantidade(String quantidade) {
         this.quantidade = quantidade;
     }
 
-    public int getNome() {
+    public String getNome() {
         return nome;
     }
 
-    public void setNome(int nome) {
+    public void setNome(String nome) {
         this.nome = nome;
     }
 
-    public int getCaegoria() {
-        return caegoria;
+    public String getCategoria() {
+        return categoria;
     }
 
-    public void setCaegoria(int caegoria) {
-        this.caegoria = caegoria;
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
     }
 
 
-
-
-
-
-
-
-
+   
 }
